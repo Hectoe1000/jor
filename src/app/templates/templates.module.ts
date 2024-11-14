@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { TemplatesRoutingModule } from './templates-routing.module';
 import { TemplateHeaderComponent } from './template-header/template-header.component';
+import { TemplateFooterComponent } from './template-footer/template-footer.component';
 
 
 @NgModule({
@@ -10,10 +11,12 @@ import { TemplateHeaderComponent } from './template-header/template-header.compo
   imports: [
     CommonModule,
     TemplatesRoutingModule,
-    TemplateHeaderComponent
+    TemplateHeaderComponent,
+   
   ],
   exports:[
-    TemplateHeaderComponent
+    TemplateHeaderComponent,
+    
   ]
 })
 export class TemplatesModule { }
